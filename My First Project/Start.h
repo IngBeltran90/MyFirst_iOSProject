@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface Start : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *lblMessage;
+
 
 
 @end
