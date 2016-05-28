@@ -12,6 +12,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblMessage;
 @property (strong, nonatomic) IBOutlet UIButton *btn1;
 @property (strong, nonatomic) IBOutlet UIButton *btn2;
+@property (strong, nonatomic) IBOutlet UIImageView *imgUser;
 
 - (IBAction)btn1Pressed:(id)sender;
 - (IBAction)btn2Pressed:(id)sender;

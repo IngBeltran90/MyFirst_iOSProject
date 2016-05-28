@@ -13,15 +13,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola Mundo!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OP7-Ci-QIh" userLabel="lblMessage">
-                                <rect key="frame" x="70" y="60" width="180" height="21"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
-                                <color key="textColor" red="0.95686274770000002" green="0.26274511220000002" blue="0.21176470820000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="xu2-s6-1gF" userLabel="btn1">
-                                <rect key="frame" x="40" y="140" width="100" height="30"/>
+                                <rect key="frame" x="40" y="220" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button 1"/>
                                 <connections>
@@ -29,19 +22,31 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mcJ-wx-RVv" userLabel="btn2">
-                                <rect key="frame" x="180" y="140" width="100" height="30"/>
+                                <rect key="frame" x="180" y="220" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button 2"/>
                                 <connections>
                                     <action selector="btn2Pressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AUs-Xi-MDA"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_unknown.png" id="2uX-km-g8m" userLabel="img">
+                                <rect key="frame" x="90" y="40" width="140" height="140"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola Mundo!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OP7-Ci-QIh" userLabel="lblMessage">
+                                <rect key="frame" x="70" y="273" width="180" height="21"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="19"/>
+                                <color key="textColor" red="0.95686274770000002" green="0.26274511220000002" blue="0.21176470820000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="btn1" destination="xu2-s6-1gF" id="EQq-Jg-iUo"/>
                         <outlet property="btn2" destination="mcJ-wx-RVv" id="G2a-M8-EH1"/>
+                        <outlet property="imgUser" destination="2uX-km-g8m" id="non-TE-FZ8"/>
                         <outlet property="lblMessage" destination="OP7-Ci-QIh" id="0Yh-UM-M3B"/>
                     </connections>
                 </viewController>
@@ -50,4 +55,7 @@
             <point key="canvasLocation" x="74" y="221"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="img_unknown.png" width="336" height="336"/>
+    </resources>
 </document>

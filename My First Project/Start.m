@@ -27,11 +27,13 @@
 /*----------------------------------*/
 /* Button methods */
 - (IBAction)btn1Pressed:(id)sender {
-    self.lblMessage.text = @"Button 1 pressed";
+    self.lblMessage.text = @"Expectation";
+    self.imgUser.image = [UIImage imageNamed:@"img_woman.jpg"];
 }
 /*----------------------------------*/
 - (IBAction)btn2Pressed:(id)sender {
-    self.lblMessage.text = @"Button 2 pressed";
+    self.lblMessage.text = @"Reality";
+    self.imgUser.image = [UIImage imageNamed:@"img_monkey.jpg"];
 }
 
 
